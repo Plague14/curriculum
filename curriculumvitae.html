@@ -1,0 +1,418 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Curriculum Vitae </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Rodrigo">
+        <meta name="description" content="curriculo do Digão rs">
+        <meta name="keywords" content="html5, tecnologia">
+        <script src="https://kit.fontawesome.com/7e6203832a.js" crossorigin="anonymous"></script>
+        <style>
+            @font-face {
+                font-family: helveticaneuebold;
+                src: url('helvetica-neue-bold.ttf');
+
+                font-family: 'helveticaneueoblique';
+                src: url('helvetica-neue-67-medium-condensed-oblique.otf');
+            }
+            
+            header {
+                width: 35%;
+                height: 101%;
+                position: fixed;
+                background-color: #FDC636;
+                margin: -15px -15px -15px;
+                padding: 0;   
+            }
+
+            header a {
+                text-decoration: none;
+            }
+
+            header img {
+                width: 35%;
+                display: block;
+                margin: 5% 30%;
+                border-radius: 50%;
+                border: 5px solid white;
+            }
+
+            .nome {
+                font-family: Helvetica;
+                color: #353534;
+                text-align: center;
+                font-size: 56px;
+                font-weight: bolder;
+            }
+
+            .cont {
+                font-family: Helvetica;
+                text-align: center;
+                font-size: 36px;
+                color: #353534;
+                margin-bottom: 25px;
+            }
+
+            .icon {
+                width: 90%;
+                background-color: #353534;
+                color: #FDC636;
+                font-family: Helvetica;
+                font-style: oblique;
+                padding: 5px;
+                text-align: right;
+            }
+
+            .icon p {
+                padding-right: 15px;
+            }
+
+            .icon i {
+                position: relative;
+                float: left;
+                font-size: 3em;
+                padding-left: 50px;
+            }
+            
+            .conteudo {
+                width: 65%;
+                height: auto;
+                position: relative;
+                float: right;
+
+            }
+
+            .conteudo i {
+                color: #FDC636;
+                font-size: 5em;
+                margin-left: 100px;
+            }
+
+            .title {
+                background-color: #353534;
+                text-align: left;
+                padding-left: 10px;
+                width: 80%;
+                float: right;
+                position: relative;
+                /*border-radius: 25px 0 0 25px;*/
+                color: white;
+                font-family: Helvetica;
+                font-weight: bolder;
+            }
+
+            .content {
+                position: relative;
+                float: left;
+                margin: 15px 50px 15px 50px;
+                font-family: Helvetica;
+                font-size: 20px;
+            }
+
+            .acad {
+                margin-left: 200px;
+                font-size: 36px;
+                padding-bottom: 20px;
+            }
+
+            .time {
+                width: 5%;
+                position: absolute;
+                margin: 25px 0 0 75px;
+            }
+
+            .prof {
+                width: auto;
+                background-color: #353534;
+                color: #FDC636;
+                padding: 5px;
+                text-align: center;
+                font-family: helvetica;
+                font-style: oblique;
+                font-size: 24px;
+            }
+
+            .graf {
+                padding-top: 15px;
+                display: inline-block;
+            }
+
+            .atrib {
+                text-align: center;
+            }
+
+            .skills {
+                display: inline-block;
+                margin-left: 250px;
+            }
+            /*.chart{
+                position: relative;
+                width:200px;
+                height:200px;
+                
+                border-radius: 50%;
+                background-color: #E4E4E4;
+                
+                overflow:hidden;
+                }
+
+            .chart .radio_chart{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 50%);*/
+                /*-webkit-clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 50%);*/
+                /*background-color: #FDC636;
+                position:absolute;
+                }
+
+            .chart .radio_chart.animate{
+                animation-name: circled;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                -moz-animation-name: circled;
+                -moz-animation-duration: 1s;
+                -moz-animation-timing-function: linear;
+                -webkit-animation-name: circled;
+                -webkit-animation-duration: 1s;
+                -webkit-animation-timing-function: linear;
+                background: #FDC636;
+                }
+
+            .chart .cap{
+                border-top: #E4E4E4 3px solid;
+                border-left: #E4E4E4 2px solid;
+                position:absolute;
+                width: 100%;
+                height: 100%;
+                
+                transform: scale(.8);
+                
+                background-color: white;
+                margin: 0 auto;
+                border-radius:50%;
+                
+                box-shadow: 2px 2px 10px rgba(0,0,0,.5);
+                }
+
+            .chart .value{
+                color: #353534;
+                width:100%;
+                height:100%;
+                text-align: center;
+                font-size:300%;
+                top:37.5%;
+                
+                position:absolute;
+
+                /*text-shadow: -2px -2px 5px #353534, 2px 2px 5px #353534, 0 0 50px #353534;*/
+                /*}
+
+                @keyframes circled {
+                    0%   {
+                    clip-path: polygon(100% 0, 100% 0%, 100% 0%, 100% 0%, 100% 0%, 50% 50%);
+                    }
+                    25%  {
+                    clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 50%);
+                    }
+                    50%{
+                    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 100%, 0 100%, 50% 50%);
+                    }
+                    75%  {
+                    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%, 0 0, 50% 50%);
+                    }
+                    100% {
+                    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 100% 0, 50% 50%);
+                    }
+                }
+                @-webkit-keyframes circled {
+                    0%   {
+                    -webkit-clip-path: polygon(100% 0, 100% 0%, 100% 0%, 100% 0%, 100% 0%, 50% 50%);
+                    }
+                    25%  {
+                    -webkit-clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 50%);
+                    }
+                    50%{
+                    -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 100%, 0 100%, 50% 50%);
+                    }
+                    75%  {
+                    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%, 0 0, 50% 50%);
+                    }
+                    100% {
+                    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 100% 0, 50% 50%);
+                    }
+                }
+                @-moz-keyframes circled {
+                    0%   {
+                    clip-path: polygon(100% 0, 100% 0%, 100% 0%, 100% 0%, 100% 0%, 50% 50%);
+                    }
+                    25%  {
+                        clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 50%);
+                    }
+                    50%{
+                    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 100%, 0 100%, 50% 50%);
+                    }
+                    75%  {
+                    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%, 0 0, 50% 50%);
+                    }
+                    100% {
+                    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 100% 0, 50% 50%);
+                    }
+                }*/
+
+                @media screen and (max-width: 62.5em) {
+                    header {
+                        height: 100%;
+                    }
+
+                    .cont i {
+                        padding: 10px;
+                    }
+
+                    .icon i{
+                        padding-left: 10px;
+                    }
+
+                    .title {
+                        width: 75%;
+                        padding-top: 25px;
+                    }
+
+                    .conteudo i {
+                        padding-left: 0;
+                        margin-left: 20px;
+                    }
+
+                    .skills {
+                        text-align: center;
+                        margin-left: 40px;
+                    }
+
+                    .acad {
+                        font-size: 14px;
+                        padding-bottom: 10px;
+                        margin-left: 100px;
+                        padding-top: 25px;
+
+                    }
+
+                    .es {
+                        display: none;
+                    }
+
+                    .time {
+                        padding: 0;
+                        margin-left: 25px;
+                    }
+
+                    .conteudo i {
+                        padding-top: 25px;
+                    }
+
+                }  
+                   
+        </style>
+    </head>
+    <body>
+       <header>
+            <img src="./imgs/foto.jpg">
+            <h1 class="nome">RODRIGO OLIVEIRA</h1>
+
+            <div class="prof">
+                <h2>PROGRAMADOR E GESTOR</h2>
+            </div>
+            <h3 class="cont">CONTATO</h3>
+            <a href="mailto:oliveirarodrigo1403@gmail.com" target="blank"> <div class="icon">
+                <i class="far fa-envelope"></i><p>oliveirarodrigo1403@gmail.com</p>
+            </div></a>
+            <br>
+            <a href="//api.whatsapp.com/send?1=pt_BR&phone=5521969249017" target="blank"><div class="icon">
+                <i class="fas fa-phone"></i><p>(21) 969249017</p>
+            </div></a>
+            <br>
+            <a href="https://www.linkedin.com/in/rodrigo-oliveira-7a2264192/" target="blank"><div class="icon">
+                <i class="fab fa-linkedin"></i><p>linkedin.com/in/rodrigo-oliveira-7a2264192/</p>
+            </div></a>
+            <br>
+            <a href="https://github.com/Plague14" target="blank"><div class="icon">
+                <i class="fab fa-github"></i><p>https://github.com/Plague14</p>
+            </div></a>
+            <br>
+       </header>
+       <div class="conteudo">
+            <i class="fas fa-user"></i>
+            <div class="title">
+                <h1>Perfil</h1>
+            </div>
+            <div class="content">
+                <p>Olá :) , Tenho 24 anos, e sou um verdadeiro entusiasta da programação. Tive contato com computação muito cedo e desde então essa paixão vem crescendo. Então resolvi expandir meu conhecimento, não ficando apenas na área de Administração, no qual tenho experiência (e também amo), mas querendo construir mais para meu portfólio e agregar nas empresas que almejo.</p>
+            </div>
+            <i class="fas fa-graduation-cap"></i>
+            <div class="title">
+                <h1>Acadêmico</h1>
+            </div>
+            <div class="content">
+                <img src="time-line.svg" class="time">
+                <p class="acad">CEM – Centro de Educação Moderna<br> 
+                Ensino Fundamental e Médio com técnico em Administração<br>
+                Jan/2010 à Dez/2014</p>
+                <br class="es">
+                <img src="time-line.svg" class="time">
+                <p class="acad">Universidade Estácio de Sá<br> 
+                 Administração de Empresas - Cursando</p>
+                <br class="es">
+                <img src="time-line.svg" class="time" id="aq">
+                <p class="acad">Centro Universitário UNIFACVEST - EAD<br>
+                Ciência da Computação - Cursando</p>
+                <br class="es">
+                <br class="es">
+                <br class="es">
+                <br class="es">
+                <br>
+                <br>
+                <br>
+            </div>
+            <i class="fas fa-desktop"></i>
+            <div class="title">
+                <h1>Experiências</h1>
+            </div>
+            <div class="content">
+                <img src="time-line.svg" class="time">
+                <p class="acad">Dannemann & Siemsen - Relações de consumo<br>   	
+                Jovem aprendiz de auxiliar administrativo<br>  
+                Preposto<br>  
+                Março/2016 à Março/2018</p>
+                <br>
+                <br>
+            </div>
+            <i class="fas fa-cogs"></i>
+            <div class="title">
+                <h1>Habilidades</h1>
+            </div>
+            <div class="content">
+                <!--<div class="area">-->
+                    <!--This is the Structure of your chart-->
+                    <!--<div class="chart">
+                      <div class="radio_chart" id="radioChartContent">
+                      </div>
+                      <div class="cap">
+                      </div>
+                      <div class="value" id="percentValue">
+                       0%
+                      </div>
+                    </div>
+                  </div> -->
+                <div class="skills"><img src="./imgs/HTML.png" class="graf">
+                <h1 class="atrib">HTML</h1></div>
+                <div class="skills"><img src="./imgs/CSS.png" class="graf">
+                <h1 class="atrib">CSS</h1></div>
+                <div class="skills"><img src="./imgs/PYTHON.png" class="graf">
+                <h1 class="atrib">Python</h1></div>
+                <div class="skills"><img src="./imgs/GESTÃO.png" class="graf">
+                <h1 class="atrib">Gestão</h1></div>
+            </div>
+
+       </div>
+    </body>
+</html>
