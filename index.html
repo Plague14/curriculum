@@ -5,7 +5,7 @@
         <title> Curriculum Vitae </title>
         <meta charset="utf-8">
         <meta name="author" content="Rodrigo">
-        <meta name="description" content="curriculo do Digão rs">
+        <meta name="description" content="Curriculum Vitae">
         <meta name="keywords" content="html5, tecnologia">
         <script src="https://kit.fontawesome.com/7e6203832a.js" crossorigin="anonymous"></script>
         <style>
@@ -24,6 +24,7 @@
                 background-color: #FDC636;
                 margin: -15px -15px -15px;
                 padding: 0;   
+                overflow-y: scroll;
             }
 
             header a {
@@ -80,13 +81,16 @@
                 height: auto;
                 position: relative;
                 float: right;
-
             }
 
             .conteudo i {
                 color: #FDC636;
                 font-size: 5em;
                 margin-left: 100px;
+            }
+
+            #bar i{
+                margin-left: 75px;
             }
 
             .title {
@@ -119,7 +123,7 @@
             .time {
                 width: 5%;
                 position: absolute;
-                margin: 25px 0 0 75px;
+                margin: 25px 0 0 50px;
             }
 
             .prof {
@@ -146,172 +150,279 @@
                 display: inline-block;
                 margin-left: 250px;
             }
-            /*.chart{
-                position: relative;
-                width:200px;
-                height:200px;
+
+            .side{
                 
-                border-radius: 50%;
-                background-color: #E4E4E4;
+                background-color: #353534;
+            }
+
+            .idiomas{
+                padding: 25px 0;
+                margin-left: 50px;
+                text-align: left;
+            }
+
+            .idiomas h5{
+                color: #fab300;
+                display: inline;
                 
-                overflow:hidden;
+            }
+            
+            .idiomas h3{
+                color: #fab300;
+                display: inline;
+                font-family: Helvetica;
+                color: #fab300;
+            }
+
+            .list-skills{
+                margin-left: 50px;
+                
+            }
+
+            .list-skills li{
+                margin: 20px 0;
+                list-style-type: square;
+            }
+
+            .list-skills fieldset{
+                background-color: #353534;
+                color: #fab300;
+                border: none;
+            }
+
+            #skills{
+                display: inline-flex;
+            }
+
+
+            
+            @media screen and (max-width: 62.5em) {
+                header {
+                    height: 100%;
                 }
 
-            .chart .radio_chart{
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-                clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 50%);*/
-                /*-webkit-clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 50%);*/
-                /*background-color: #FDC636;
-                position:absolute;
+                .cont i {
+                    padding: 10px;
                 }
 
-            .chart .radio_chart.animate{
-                animation-name: circled;
-                animation-duration: 1s;
-                animation-timing-function: linear;
-                -moz-animation-name: circled;
-                -moz-animation-duration: 1s;
-                -moz-animation-timing-function: linear;
-                -webkit-animation-name: circled;
-                -webkit-animation-duration: 1s;
-                -webkit-animation-timing-function: linear;
-                background: #FDC636;
+                .icon i{
+                    padding-left: 10px;
                 }
 
-            .chart .cap{
-                border-top: #E4E4E4 3px solid;
-                border-left: #E4E4E4 2px solid;
-                position:absolute;
-                width: 100%;
-                height: 100%;
-                
-                transform: scale(.8);
-                
-                background-color: white;
-                margin: 0 auto;
-                border-radius:50%;
-                
-                box-shadow: 2px 2px 10px rgba(0,0,0,.5);
+                .title {
+                    width: 75%;
+                    padding-top: 25px;
                 }
 
-            .chart .value{
-                color: #353534;
-                width:100%;
-                height:100%;
-                text-align: center;
-                font-size:300%;
-                top:37.5%;
-                
-                position:absolute;
-
-                /*text-shadow: -2px -2px 5px #353534, 2px 2px 5px #353534, 0 0 50px #353534;*/
-                /*}
-
-                @keyframes circled {
-                    0%   {
-                    clip-path: polygon(100% 0, 100% 0%, 100% 0%, 100% 0%, 100% 0%, 50% 50%);
-                    }
-                    25%  {
-                    clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 50%);
-                    }
-                    50%{
-                    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 100%, 0 100%, 50% 50%);
-                    }
-                    75%  {
-                    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%, 0 0, 50% 50%);
-                    }
-                    100% {
-                    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 100% 0, 50% 50%);
-                    }
+                .conteudo i {
+                    padding-left: 0;
+                    margin-left: 20px;
                 }
-                @-webkit-keyframes circled {
-                    0%   {
-                    -webkit-clip-path: polygon(100% 0, 100% 0%, 100% 0%, 100% 0%, 100% 0%, 50% 50%);
-                    }
-                    25%  {
-                    -webkit-clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 50%);
-                    }
-                    50%{
-                    -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 100%, 0 100%, 50% 50%);
-                    }
-                    75%  {
-                    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%, 0 0, 50% 50%);
-                    }
-                    100% {
-                    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 100% 0, 50% 50%);
-                    }
+
+                .skills {
+                    text-align: center;
+                    margin-left: 40px;
                 }
-                @-moz-keyframes circled {
-                    0%   {
-                    clip-path: polygon(100% 0, 100% 0%, 100% 0%, 100% 0%, 100% 0%, 50% 50%);
-                    }
-                    25%  {
-                        clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 50%);
-                    }
-                    50%{
-                    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 100%, 0 100%, 50% 50%);
-                    }
-                    75%  {
-                    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%, 0 0, 50% 50%);
-                    }
-                    100% {
-                    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 100% 0, 50% 50%);
-                    }
-                }*/
 
-                @media screen and (max-width: 62.5em) {
-                    header {
-                        height: 100%;
-                    }
+                .acad {
+                    font-size: 14px;
+                    padding-bottom: 10px;
+                    margin-left: 100px;
+                    padding-top: 25px;
 
-                    .cont i {
-                        padding: 10px;
-                    }
+                }
 
-                    .icon i{
-                        padding-left: 10px;
-                    }
+                #bar i{
+                    margin-left: 25px;
+                }
 
-                    .title {
-                        width: 75%;
-                        padding-top: 25px;
-                    }
+                .es {
+                    display: none;
+                }
 
-                    .conteudo i {
-                        padding-left: 0;
-                        margin-left: 20px;
-                    }
+                .time {
+                    padding: 0;
+                    margin-left: 10px;
+                }
 
-                    .skills {
-                        text-align: center;
-                        margin-left: 40px;
-                    }
+                .conteudo i {
+                    padding-top: 25px;
+                }
 
-                    .acad {
-                        font-size: 14px;
-                        padding-bottom: 10px;
-                        margin-left: 100px;
-                        padding-top: 25px;
+                #skills{
+                    display: inline-block;
+                }
 
-                    }
+                .list-skills{
+                    margin-top: 40px;
+                    margin-left: 100px;
+                }
 
-                    .es {
-                        display: none;
-                    }
 
-                    .time {
-                        padding: 0;
-                        margin-left: 25px;
-                    }
 
-                    .conteudo i {
-                        padding-top: 25px;
-                    }
-
-                }  
+            }  
                    
+            /* graficos */
+
+            .container{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 40px;
+            }
+
+            .container .card{
+                position: relative;
+                width: 220px;
+                height: 250px;
+                background: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container .card .percent{
+                position: relative;
+                width: 150px;
+                height: 150px;
+
+            }
+
+            .container .card .percent svg{
+                position: relative;
+                width: 150px;
+                height: 150px;
+                transform: rotate(270deg);
+            }
+
+            .container .card .percent svg circle{
+                width: 100%;
+                height: 100%;
+                fill: transparent;
+                stroke-width: 2;
+                stroke: white;
+                transform: translate(5px,5px);
+            }
+
+            .container .card .percent svg circle:nth-child(2){
+                stroke: var(--clr);
+                stroke-dasharray: 440;
+                stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+                opacity: 0;
+                animation: fadeIn 1s linear forwards;
+                animation-delay: 2.5s;
+            }
+
+            @keyframes fadeIn{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+
+            .dot{
+                position: absolute;
+                inset: 5px;
+                z-index: 10;
+                transform: rotate(calc(3.6deg * var(--num)));
+                /* 360deg / 100 = 3.6*/
+                animation: animateDot 2s linear forwards;
+            }
+
+            @keyframes animateDot{
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(calc(3.6deg * var(--num)));
+                }
+            }
+
+            .dot::before{
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background: var(--clr);
+                top: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 50%;
+                box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
+            }
+
+            .number{
+                position: absolute;
+                inset: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                opacity: 0;
+                animation: fadeIn 1s linear forwards;
+                animation-delay: 2.5s;
+                font-family: 'mont', sans-serif;
+            }
+
+            .number h2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-weight: 200;
+                margin-top: 0px;
+                font-size: 36px;
+            }
+
+            .number h2 span{
+                font-weight: 300;
+                color: white;
+                font-size: 0.5em;
+            }
+
+            .number p{
+                font-weight: 1000;
+                font-size: 12px;
+                line-height: 2px;
+                margin-top: -10px;
+                letter-spacing: 2px;
+                color: white;
+                text-transform: uppercase;
+            }
+
+            /*------------- barrel row---------------*/
+                ::-webkit-scrollbar {
+                    width: 0.1px;
+                    height: 5px;
+                }
+
+                ::-webkit-scrollbar-track {
+                    background:#333;
+                }
+
+                ::-webkit-scrollbar-thumb {
+                    box-shadow: 0 0 10px white, 0 0 20px rgb(218, 218, 218), 0 0 40px white;
+                    background: white;
+                } 
+
+                @keyframes change {
+                    0%{
+                        background-position: 0 50%;
+                    }
+
+                    50%{
+                        background-position: 100% 50%;
+                    }
+                    
+                    100%{
+                        background-position: 0 50%;
+                    }
+                }
         </style>
     </head>
     <body>
@@ -320,7 +431,69 @@
             <h1 class="nome">RODRIGO OLIVEIRA</h1>
 
             <div class="prof">
-                <h2>PROGRAMADOR E GESTOR</h2>
+                <h2>DESENVOLVEDOR</h2>
+            </div>
+            <h3 class="cont">LINGUAGENS</h3>
+            <div class="side">
+                <div class="container">
+                    <div class="card">
+                        <div class="percent" style="--clr:#fab300;--num:90;">
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h2>90<span>%</span></h2>
+                                <p>Python</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="percent" style="--clr:#fab300;--num:65;">
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h2>65<span>%</span></h2>
+                                <p>VBA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="percent" style="--clr:#fab300;--num:55;">
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h2>55<span>%</span></h2>
+                                <p>Javascript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="cont">IDIOMAS</h3>
+            <div class="side">
+                <div class="idiomas">
+                    <h5>////////////////////     ////////////////////     ////////////////////     ////////////////////     ////////////////////</h5>
+                    <br>
+                    <h3>Português</h3>
+                </div>
+                <div class="idiomas">
+                    <h5>////////////////////     ////////////////////     ////////////////////     ////////////////////</h5>
+                    <br>
+                    <h3>English</h3>
+                </div>
+                <div class="idiomas">
+                    <h5>////////////////////     ////////////////////     //////////</h5>
+                    <br>
+                    <h3>Español</h3>
+                </div>
             </div>
             <h3 class="cont">CONTATO</h3>
             <a href="mailto:oliveirarodrigo1403@gmail.com" target="blank"> <div class="icon">
@@ -341,26 +514,26 @@
             <br>
        </header>
        <div class="conteudo">
-            <i class="fas fa-user"></i>
-            <div class="title">
-                <h1>Perfil</h1>
+            <div id="bar">
+                <i class="fas fa-user"></i>
+                <div class="title">
+                    <h1>Perfil</h1>
+                </div>
             </div>
             <div class="content">
-                <p>Olá :) , Tenho 24 anos, e sou um verdadeiro entusiasta da programação. Tive contato com computação muito cedo e desde então essa paixão vem crescendo. Então resolvi expandir meu conhecimento, não ficando apenas na área de Administração, no qual tenho experiência (e também amo), mas querendo construir mais para meu portfólio e agregar nas empresas que almejo.</p>
+                <p>Olá :) , Tenho 25 anos, e sou um verdadeiro entusiasta da programação. Tive contato com computação muito cedo e desde então essa paixão vem crescendo. Então resolvi expandir meu conhecimento, não ficando apenas na área de Administração, no qual tenho experiência (e também amo), mas querendo construir mais para meu portfólio e agregar nas empresas que almejo.</p>
             </div>
-            <i class="fas fa-graduation-cap"></i>
-            <div class="title">
-                <h1>Acadêmico</h1>
+            <div id="bar">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="title">
+                    <h1>Acadêmico</h1>
+                </div>
             </div>
             <div class="content">
                 <img src="time-line.svg" class="time">
                 <p class="acad">CEM – Centro de Educação Moderna<br> 
                 Ensino Fundamental e Médio com técnico em Administração<br>
                 Jan/2010 à Dez/2014</p>
-                <br class="es">
-                <img src="time-line.svg" class="time">
-                <p class="acad">Universidade Estácio de Sá<br> 
-                 Administração de Empresas - Cursando</p>
                 <br class="es">
                 <img src="time-line.svg" class="time" id="aq">
                 <p class="acad">Centro Universitário UNIFACVEST - EAD<br>
@@ -373,46 +546,58 @@
                 <br>
                 <br>
             </div>
-            <i class="fas fa-desktop"></i>
-            <div class="title">
-                <h1>Experiências</h1>
+            <div id="bar">
+                <i class="fas fa-desktop"></i>
+                <div class="title">
+                    <h1>Experiências</h1>
+                </div>
             </div>
+            
             <div class="content">
                 <img src="time-line.svg" class="time">
                 <p class="acad">Dannemann & Siemsen - Relações de consumo<br>   	
                 Jovem aprendiz de auxiliar administrativo<br>  
                 Preposto<br>  
-                Março/2016 à Março/2018</p>
+                Março/2016 à Fevereiro/2023</p>
+                <img src="time-line.svg" class="time">
+                <p class="acad">Automatize IT<br>   	
+                <a href="www.automatizeit.com">www.automatizeit.com</a><br>  
+                Freelancer<br>  
+                Janeiro/2018 à agora</p>
                 <br>
                 <br>
             </div>
-            <i class="fas fa-cogs"></i>
-            <div class="title">
-                <h1>Habilidades</h1>
+            <div id="bar">
+                <i class="fas fa-cogs"></i>
+                <div class="title">
+                    <h1>Habilidades</h1>
+                </div>
             </div>
-            <div class="content">
-                <!--<div class="area">-->
-                    <!--This is the Structure of your chart-->
-                    <!--<div class="chart">
-                      <div class="radio_chart" id="radioChartContent">
-                      </div>
-                      <div class="cap">
-                      </div>
-                      <div class="value" id="percentValue">
-                       0%
-                      </div>
-                    </div>
-                  </div> -->
-                <div class="skills"><img src="./imgs/HTML.png" class="graf">
-                <h1 class="atrib">HTML</h1></div>
-                <div class="skills"><img src="./imgs/CSS.png" class="graf">
-                <h1 class="atrib">CSS</h1></div>
-                <div class="skills"><img src="./imgs/PYTHON.png" class="graf">
-                <h1 class="atrib">Python</h1></div>
-                <div class="skills"><img src="./imgs/GESTÃO.png" class="graf">
-                <h1 class="atrib">Gestão</h1></div>
-            </div>
-
+            <div class="content" id="skills">
+                <div class="list-skills">
+                    <legend>Hard Skills</legend>
+                    <br>
+                    <fieldset>
+                        <li>UI/UX</li>
+                        <li>Front-End (HTML, CSS, Javascript)</li>
+                        <li>Back-End (Node.js ou Django)</li>
+                        <li>Full Stack (Tkinter [ Desktop ] e React Native / Kivy [ Mobile ])</li>
+                        <li>SQL / NoSQL</li>
+                        <li>RPA - Robotic Process Automation</li>
+                    </fieldset>
+                </div>
+                <br>
+                <div class="list-skills">
+                    <legend>Soft Skills</legend>
+                    <br>
+                    <fieldset>
+                        <li>Tenho Atitude / Ousadia</li>
+                        <li>Sempre busco otimizar as tarefas</li>
+                        <li>Extremamente dedicado</li>
+                        <li>Não trabalho só por dinheiro</li>
+                    </fieldset>
+                </div>       
+            </div> 
        </div>
     </body>
 </html>
