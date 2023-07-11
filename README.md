@@ -1,4 +1,4 @@
 # curriculum
-*Curriculum Vitae*
+**Curriculum Vitae**
 
 My CV on Github Pages
